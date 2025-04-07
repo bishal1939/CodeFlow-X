@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header Styling */
+.header {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #ffc300;
+}
+
+/* Home Section */
+.home {
+  background: linear-gradient(to bottom right, #0077b6, #00b4d8);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ffc300;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ffa600;
+}
+
+/* Courses Section */
+.courses {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.courses h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.course-item {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.course-item h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.course-item p {
+  color: #555;
+}
+
+.course-item i {
+  font-size: 2rem;
+  color: #0077b6;
+}
+
+/* Indicators Section */
+.indicators {
+  background: linear-gradient(to top right, #00b4d8, #0077b6);
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.indicators h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.indicators p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ffc300;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #fff;
+  padding: 3rem 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #0077b6;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #005f8d;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation ul {
+    flex-direction: column;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+}
